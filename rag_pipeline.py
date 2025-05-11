@@ -42,7 +42,7 @@ def generate_video_transcript(video_url: str):
 
 def split_documents(documents):
     splitter = RecursiveCharacterTextSplitter(chunk_size=800, chunk_overlap=50)
-    print("splitters.........", splitter.split_documents(documents))
+    print("splitters....", splitter.split_documents(documents))
     return splitter.split_documents(documents)
 
 
